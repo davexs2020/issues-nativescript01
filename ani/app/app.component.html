@@ -1,0 +1,18 @@
+<ActionBar [title]="AppTitle"></ActionBar>
+<StackLayout>
+  <TextField [(ngModel)]="alert.AppAlertMessage" hint="Add New Record"></TextField>
+  <Button text="Add" (tap)="DoCreate()"></Button>
+  <ListView [items]="alerts">
+    <ng-template let-item="alert">
+      <Label [text]="item.AppAlertMessage"></Label>
+    </ng-template>
+  </ListView>
+  <Label text="Mobile View" horizontalAlignment="center"></Label>
+  <Label [text]="AppTitle"  horizontalAlignment="center"></Label>
+  <Label text="Mobile View" horizontalAlignment="center"></Label>
+  <Label [text]="AppTitle"  horizontalAlignment="center"></Label>
+  <Label text="Mobile View" horizontalAlignment="center"></Label>
+</StackLayout>
+
+<!-- https://docs.nativescript.org/angular/core-concepts/angular-navigation.html#page-router-outlet
+<page-router-outlet></page-router-outlet>  -->

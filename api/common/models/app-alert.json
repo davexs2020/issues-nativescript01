@@ -1,0 +1,19 @@
+{
+  "name": "AppAlert",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "AppAlertMessage": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "mixins": { "FireLoop": true },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
